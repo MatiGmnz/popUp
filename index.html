@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="opcion1">Opcion 1</button>
+    
+    <dialog id="pop1">
+        <div class="head">
+            <h2>UBICACION</h2>
+            <button id="cerrar">X</button>
+        </div>
+        
+        <div class="main">
+            <div class="location" id="map">
+                <iframe class="ubi" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13618.730966150759!2d-64.18332754999999!3d-31.422866000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329902eb0b2faf%3A0x4382bb478dc6e982!2sPlaza%20San%20Mart%C3%ADn!5e0!3m2!1ses!2sar!4v1683061902065!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <button class="btnUbi">Obtener Ubicacion</button>
+            </div>
+            <fieldset class="boxes" id="boxes">
+                <div class ="one">
+                    <label for="name"><input type="text" name="name" id="name" placeholder="Nombre" required></label>
+                    <label for="lastName"><input type="text" name="apellido" id="lastName" placeholder="Apellido" required></label>
+                    <label for="nroTel"><input type="text" name="nroTel" id="nroTel" placeholder="Nro de telefono" required></label>
+                </div>
+                <div class="two">
+                    <label for="calle"><input type="text" name="calle" id="calle" placeholder="Direccion" required></label>
+                    <label for="altura"><input type="number" name="altura" id="altura" placeholder="Altura" required></label>
+                    <label for="dpto"><input type="text" name="dpto" id="dpto" placeholder="Departamento"></label>
+                </div>  
+                <button type="submit">Ingresar</button>
+            </fieldset>
+        </div>
+    </dialog>
+
+<script src="machine.js"></script>
+</body>
+</html>
